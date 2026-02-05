@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.page-wrapper {
+    transform: scale(1); 
+    position: relative;
+    z-index: 1;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fdf6e3;
@@ -15,7 +21,17 @@ header {
     padding: 1rem 0;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 100; 
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.nav-item {
+    color: #d4af37; 
 }
 
 nav {
@@ -26,21 +42,9 @@ nav {
     margin: 0 auto;
 }
 
-.logo {
-    color: #d4af37;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 nav ul {
     display: flex;
     list-style: none;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 15px;
 }
 
 .hero {
@@ -69,4 +73,6 @@ footer {
     text-align: center;
     padding: 2rem 0;
     width: 100%;
+    position: relative;
+    z-index: 200; 
 }
